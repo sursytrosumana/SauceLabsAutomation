@@ -1,0 +1,20 @@
+Assertion passed: Element //a[contains(text(),'Sign up')] exists and is visible
+Successfully clicked on element: //a[contains(text(),'Sign up')]
+Clicked on Sign up link
+Registration form loaded successfully
+Assertion passed: Element //input[@id='first_name'] exists and is visible
+Successfully sent keys 'Test' to element: //input[@id='first_name']
+First name entered: Test
+Assertion passed: Element //input[@id='last_name'] exists and is visible
+Successfully sent keys 'User' to element: //input[@id='last_name']
+Last name entered: User
+Assertion passed: Element //input[@id='email'] exists and is visible
+Successfully sent keys 'testuser_1767892192@gmail.com' to element: //input[@id='email']
+Unique email entered: testuser_1767892192@gmail.com
+Assertion passed: Element //input[@id='password'] exists and is visible
+Successfully sent keys 'TestPass@123' to element: //input[@id='password']
+Password entered
+Assertion passed: Element //input[@type='submit' and @value='Create'] exists and is visible
+Successfully clicked on element: //input[@type='submit' and @value='Create']
+Clicked on Create button
+Registration is not successful - No redirect and Log Out element not found

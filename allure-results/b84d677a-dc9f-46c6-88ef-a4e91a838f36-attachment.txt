@@ -1,0 +1,13 @@
+Assertion passed: Element //input[@id='search-field'] exists and is visible
+Successfully sent keys 'noir jacket' to element: //input[@id='search-field']
+Product searched: noir jacket
+Assertion failed: Element //img[@id='feature-image'] does not exist or is not visible
+Assertion failed: Element //div[@class='product-item']//img does not exist or is not visible
+Assertion failed: Element //div[@class='product-grid-item']//img does not exist or is not visible
+Assertion failed: Element //div[contains(@class,'product')]//img does not exist or is not visible
+Assertion failed: Element //a[contains(@class,'product')]//img does not exist or is not visible
+Assertion failed: Element (//img[contains(@class,'product') or contains(@class,'image')])[1] does not exist or is not visible
+Assertion failed: Element (//a[contains(@class,'product') or contains(@href,'products')])[1] does not exist or is not visible
+No product image or link found, continuing...
+Error during product interaction: No product found to add to cart
+assert False

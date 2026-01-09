@@ -1,0 +1,13 @@
+Assertion passed: Element //a[@class='checkout'] exists and is visible
+Successfully clicked on element: //a[@class='checkout']
+Clicked on Check Out link
+Assertion passed: Element //input[@id='customer_email'] exists and is visible
+Successfully sent keys 'sumanaghimire45@gmail.com' to element: //input[@id='customer_email']
+Email entered: sumanaghimire45@gmail.com
+Assertion passed: Element //input[@id='customer_password'] exists and is visible
+Successfully sent keys 'Sumana@123' to element: //input[@id='customer_password']
+Password entered
+Assertion passed: Element //input[@type='submit' and @value='Sign In'] exists and is visible
+Successfully clicked on element: //input[@type='submit' and @value='Sign In']
+Clicked on Sign In button
+Login may not have been successful - Account element not found

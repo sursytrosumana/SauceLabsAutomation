@@ -1,0 +1,19 @@
+Assertion passed: Element //input[@id='search-field'] exists and is visible
+Successfully sent keys 'Striped top' to element: //input[@id='search-field']
+Product searched: Striped top
+Assertion failed: Element //img[@id='feature-image'] does not exist or is not visible
+Assertion failed: Element //div[@class='product-item']//img does not exist or is not visible
+Assertion failed: Element //div[@class='product-grid-item']//img does not exist or is not visible
+Assertion failed: Element //div[contains(@class,'product')]//img does not exist or is not visible
+Assertion failed: Element //a[contains(@class,'product')]//img does not exist or is not visible
+Assertion passed: Element (//img[contains(@class,'product') or contains(@class,'image')])[1] exists and is visible
+Successfully clicked on element: (//img[contains(@class,'product') or contains(@class,'image')])[1]
+Clicked on product image with xpath: (//img[contains(@class,'product') or contains(@class,'image')])[1]
+Assertion passed: Element //input[@id='add'] exists and is visible
+Successfully clicked on element: //input[@id='add']
+Added to cart
+Assertion passed: Element //a[contains(@class,'toggle-drawer') and contains(@class,'cart')] exists and is visible
+Successfully clicked on element: //a[contains(@class,'toggle-drawer') and contains(@class,'cart')]
+Clicked on My Cart link
+Assertion passed: Element //span[@id='cart-target-desktop']//span exists and is visible
+Cart count: (1)
