@@ -1,32 +1,11 @@
 # Import the main test class from the test module
 from tests.test_saucelabs import SauceLabsTest
+# Import test data from the test data module
+from tests.test_data import login_search_data
 # Import time module for adding delays in the automation
 import time
 # Import Allure for test reporting and step tracking
 import allure
-
-# Define test data - this contains login credentials and search terms for testing
-# Each dictionary contains email, password and search term for a test case
-login_search_data = [
-    # First test case with email, password and search term
-    {
-        "email": "sumanaghimire45@gmail.com",
-        "password": "Sumana@123",
-        "search_term": "grey jacket"
-    },
-    # Second test case with different credentials and search term
-    {
-        "email": "testuser2@gmail.com",
-        "password": "Password2@",
-        "search_term": "noir jacket"
-    },
-    # Third test case with different credentials and search term
-    {
-        "email": "testuser3@gmail.com",
-        "password": "Password3#",
-        "search_term": "Striped top"
-    }
-]
 
 def main():
     """
