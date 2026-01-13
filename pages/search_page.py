@@ -38,13 +38,7 @@ class HomePage(BasePage):
 
     @allure.step("Click first product in search results")
     def click_first_product_in_search_results(self):
-        """
-        Click on the first product in the search results.
-        Returns:
-            bool: True if the first product was successfully clicked, False otherwise
-        """
         try:
-            # Wait until at least one product is visible
             first_product = WebDriverWait(self.driver, 10).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id^='product-']"))
             )
@@ -52,5 +46,6 @@ class HomePage(BasePage):
             print("Clicked on the first product successfully")
             return True
         except Exception as e:
+            self.take_screenshot("click_first_product_failure")
             print(f"Failed to click on the first product: {e}")
             return False

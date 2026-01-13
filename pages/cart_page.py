@@ -6,17 +6,11 @@ from selenium.webdriver.common.by import By
 import allure
 
 class CartPage(BasePage):
-    """
-    CartPage class represents the shopping cart page of the application.
-    It contains locators for elements on the cart page and methods to interact with them.
-    """
     # Define locators as class constants for elements on the cart page
     # Locator for the My Cart link
-    MY_CART_LINK = "//a[contains(@class,'toggle-drawer') and contains(@class,'cart')]"  # Correct XPath according to provided list
-    # Locator for the cart count element
-    CART_COUNT_SPAN = "//span[@id='cart-target-desktop']//span"  # Correct XPath according to provided list
+    MY_CART_LINK = "//a[contains(@class,'toggle-drawer') and contains(@class,'cart')]"  
     # Locator for the checkout button
-    CHECKOUT_BUTTON = "//a[@class='checkout']"  # Correct XPath according to provided list
+    CHECKOUT_BUTTON = "//a[@class='checkout']"  
     
     def __init__(self, driver):
         """
@@ -43,41 +37,6 @@ class CartPage(BasePage):
         print("Clicked on My Cart link")
         # Return True to indicate success
         return True
-
-    @allure.step("Get cart count")
-    def get_cart_count(self):
-        """
-        Get the number of items in the shopping cart.
-        
-        Returns:
-            str or None: The cart count as a string if found, None otherwise
-        """
-        try:
-            # Find the cart count element using By.XPATH
-            cart_count_element = self.driver.find_element(By.XPATH, self.CART_COUNT_SPAN)
-            # Get the text content of the cart count element
-            cart_count = cart_count_element.text
-        except:
-            # If the specific cart count element is not found, try to find any element that might show cart count
-            try:
-                alt_cart_count_locator = "//*[@id='cart-count' or contains(@class, 'cart-count') or contains(@class, 'count')]"
-                cart_count_element = self.driver.find_element(By.XPATH, alt_cart_count_locator)
-                cart_count = cart_count_element.text
-            except:
-                # If no cart count element is found, try to count items in cart differently
-                try:
-                    # Try to count cart items by looking for product rows in cart
-                    cart_items_locator = "//div[contains(@class, 'cart-item') or contains(@class, 'product')]"
-                    cart_items = self.driver.find_elements(By.XPATH, cart_items_locator)
-                    cart_count = str(len(cart_items))
-                except:
-                    # If all attempts fail, return 0
-                    cart_count = "0"
-        
-        # Print the cart count
-        print(f"Cart count: {cart_count}")
-        # Return the cart count
-        return cart_count
 
     @allure.step("Click on checkout button")
     def click_checkout(self):
