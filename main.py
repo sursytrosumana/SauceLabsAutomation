@@ -60,6 +60,3 @@ def main():
         print("\nValidation complete! Screenshots will now only be captured on failures.")
         
         test.close_driver()
-
-if __name__ == "__main__":
-    main()
