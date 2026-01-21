@@ -12,6 +12,7 @@ from pages.signup import RegistrationPage
 
 class SauceLabsTest:
     def __init__(self):
+        #ja rakhe ni run chai runner bata garne
         chrome_options = Options()
         chrome_options.add_argument("--start-maximized")
         service = Service('/Users/sumana/Downloads/chromedriver-mac-arm64 2/chromedriver')
@@ -24,7 +25,7 @@ class SauceLabsTest:
         self.registration_page = RegistrationPage(self.driver)
 
     @allure.feature('SauceLabs Automation')
-    @allure.story('User Registration')
+    @allure.story('Signup')
     def perform_registration(self):
         with allure.step("Running registration test with unique email"):
             print("Running registration test with unique email")

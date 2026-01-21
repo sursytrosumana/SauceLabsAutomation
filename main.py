@@ -10,7 +10,7 @@ def main():
     
     test = SauceLabsTest()
     
-    method_source = inspect.getsource(test.home_page.take_screenshot_on_success)
+    method_source = inspect.getsource(test.home_page.take_screenshot)
     if "pass" in method_source or "# Screenshot capturing on success is disabled" in method_source:
         print("✓ Confirmed: take_screenshot_on_success method is now a no-op")
     else:
